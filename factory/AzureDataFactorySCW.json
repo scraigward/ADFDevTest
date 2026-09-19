@@ -1,0 +1,15 @@
+{
+	"name": "AzureDataFactorySCW",
+	"properties": {
+		"trustModeClaimForMi": {
+			"value": "Disabled",
+			"editable": true
+		}
+	},
+	"location": "uksouth",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "492de98b-5bb2-45e3-a9f8-3ed1b8bac056",
+		"tenantId": "493a66d7-6837-4c72-8bfb-604b9aba121e"
+	}
+}
