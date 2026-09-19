@@ -1,0 +1,6 @@
+{
+	"name": "integrationRuntimeIonos",
+	"properties": {
+		"type": "SelfHosted"
+	}
+}
