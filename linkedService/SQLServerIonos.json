@@ -1,0 +1,21 @@
+{
+	"name": "SQLServerIonos",
+	"type": "Microsoft.DataFactory/factories/linkedservices",
+	"properties": {
+		"annotations": [],
+		"type": "SqlServer",
+		"typeProperties": {
+			"server": "77.68.110.173,7070",
+			"database": "AzureDataFactoryDB",
+			"encrypt": "mandatory",
+			"trustServerCertificate": true,
+			"authenticationType": "SQL",
+			"userName": "adf",
+			"encryptedCredential": "eyJDcmVkZW50aWFsSWQiOiJiMzRkZWEzOS00YTlmLTQ0M2ItYTEzNC1jZTQ3NmNlMTQ5ODMiLCJWZXJzaW9uIjoiMi4wIiwiQ2xhc3NUeXBlIjoiTWljcm9zb2Z0LkRhdGFQcm94eS5Db3JlLkludGVyU2VydmljZURhdGFDb250cmFjdC5DcmVkZW50aWFsU1UwNkNZMTQifQ=="
+		},
+		"connectVia": {
+			"referenceName": "integrationRuntimeIonos",
+			"type": "IntegrationRuntimeReference"
+		}
+	}
+}
