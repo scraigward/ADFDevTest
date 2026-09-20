@@ -1,0 +1,24 @@
+{
+	"name": "AzureDataFactoryDB",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "SQLServerIonos",
+			"type": "LinkedServiceReference"
+		},
+		"parameters": {
+			"Schema": {
+				"type": "string"
+			},
+			"TableName": {
+				"type": "string"
+			}
+		},
+		"annotations": [],
+		"type": "SqlServerTable",
+		"schema": [],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "dummytable"
+		}
+	}
+}
