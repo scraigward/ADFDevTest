@@ -1,0 +1,27 @@
+{
+	"$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+	"contentVersion": "1.0.0.0",
+	"parameters": {
+		"factoryName": {
+			"value": "AzureDataFactorySCW"
+		},
+		"SQLServerIonos_password": {
+			"value": ""
+		},
+		"SQLServerIonos_properties_typeProperties_server": {
+			"value": "77.68.110.173,7070"
+		},
+		"SQLServerIonos_properties_typeProperties_database": {
+			"value": "AzureDataFactoryDB"
+		},
+		"SQLServerIonos_properties_typeProperties_userName": {
+			"value": "adf"
+		},
+		"containerUri": {
+			"value": ""
+		},
+		"containerSasToken": {
+			"value": ""
+		}
+	}
+}
