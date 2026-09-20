@@ -6,10 +6,10 @@
 			"type": "LinkedServiceReference"
 		},
 		"parameters": {
-			"sourceName": {
+			"dbSchema": {
 				"type": "string"
 			},
-			"targetTarget": {
+			"dbTable": {
 				"type": "string"
 			}
 		},
@@ -17,8 +17,14 @@
 		"type": "SqlServerTable",
 		"schema": [],
 		"typeProperties": {
-			"schema": "dbo",
-			"table": "dummytable"
+			"schema": {
+				"value": "@dataset().dbSchema",
+				"type": "Expression"
+			},
+			"table": {
+				"value": "@dataset().dbTable",
+				"type": "Expression"
+			}
 		}
 	}
 }
