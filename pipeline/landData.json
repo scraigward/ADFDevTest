@@ -33,10 +33,34 @@
 						}
 					}
 				}
+			},
+			{
+				"name": "InterfaceVariables",
+				"type": "SetVariable",
+				"dependsOn": [
+					{
+						"activity": "LookupMetaInterface",
+						"dependencyConditions": [
+							"Succeeded"
+						]
+					}
+				],
+				"policy": {
+					"secureOutput": false,
+					"secureInput": false
+				},
+				"userProperties": [],
+				"typeProperties": {
+					"variableName": "InterfaceRowValues",
+					"value": {
+						"value": "@activity('LookupMetaInterface').output.firstRow.interfaces\n",
+						"type": "Expression"
+					}
+				}
 			}
 		],
 		"variables": {
-			"SourceName": {
+			"InterfaceRowValues": {
 				"type": "String"
 			}
 		},
