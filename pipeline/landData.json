@@ -35,6 +35,11 @@
 				}
 			}
 		],
+		"variables": {
+			"SourceName": {
+				"type": "String"
+			}
+		},
 		"annotations": []
 	}
 }
