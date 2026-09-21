@@ -1,5 +1,5 @@
 {
-	"name": "010-LandData-Parent",
+	"name": "010b-LandData-Parent",
 	"properties": {
 		"activities": [
 			{
@@ -51,7 +51,7 @@
 				"userProperties": [],
 				"typeProperties": {
 					"pipeline": {
-						"referenceName": "010-LandData-Child",
+						"referenceName": "010a-LandData-Child",
 						"type": "PipelineReference"
 					},
 					"waitOnCompletion": true,

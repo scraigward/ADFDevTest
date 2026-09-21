@@ -1,5 +1,5 @@
 {
-	"name": "010-LandData-Child",
+	"name": "010a-LandData-Child",
 	"properties": {
 		"activities": [
 			{
@@ -13,7 +13,10 @@
 					"secureOutput": false,
 					"secureInput": false
 				},
-				"userProperties": []
+				"userProperties": [],
+				"typeProperties": {
+					"fieldList": []
+				}
 			},
 			{
 				"name": "FilterFileType",
