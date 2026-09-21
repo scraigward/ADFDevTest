@@ -1,6 +1,47 @@
 {
 	"name": "010-LandData-Child",
 	"properties": {
+		"activities": [
+			{
+				"name": "Get Metadata",
+				"type": "GetMetadata",
+				"dependsOn": [],
+				"policy": {
+					"timeout": "0.12:00:00",
+					"retry": 0,
+					"retryIntervalInSeconds": 30,
+					"secureOutput": false,
+					"secureInput": false
+				},
+				"userProperties": []
+			},
+			{
+				"name": "FilterFileType",
+				"type": "Filter",
+				"dependsOn": [
+					{
+						"activity": "Get Metadata",
+						"dependencyConditions": [
+							"Succeeded"
+						]
+					}
+				],
+				"userProperties": []
+			},
+			{
+				"name": "ForEach1",
+				"type": "ForEach",
+				"dependsOn": [
+					{
+						"activity": "FilterFileType",
+						"dependencyConditions": [
+							"Succeeded"
+						]
+					}
+				],
+				"userProperties": []
+			}
+		],
 		"parameters": {
 			"IntRunId": {
 				"type": "int"
@@ -8,11 +49,14 @@
 			"IntName": {
 				"type": "string"
 			},
+			"FilePattern": {
+				"type": "int"
+			},
 			"SourceCount": {
 				"type": "int"
 			},
 			"TargetCount": {
-				"type": "int"
+				"type": "string"
 			},
 			"ExStatus": {
 				"type": "string"
