@@ -1,6 +1,23 @@
 {
 	"name": "010-LandData-Child",
 	"properties": {
+		"parameters": {
+			"IntRunId": {
+				"type": "int"
+			},
+			"IntName": {
+				"type": "string"
+			},
+			"SourceCount": {
+				"type": "int"
+			},
+			"TargetCount": {
+				"type": "int"
+			},
+			"ExStatus": {
+				"type": "string"
+			}
+		},
 		"annotations": []
 	}
 }
