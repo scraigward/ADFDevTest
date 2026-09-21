@@ -54,7 +54,24 @@
 						"referenceName": "010-LandData-Child",
 						"type": "PipelineReference"
 					},
-					"waitOnCompletion": true
+					"waitOnCompletion": true,
+					"parameters": {
+						"IntRunId": {
+							"value": "@activity('LookupMetaInterface').output.firstRow.IntRunId",
+							"type": "Expression"
+						},
+						"IntName": {
+							"value": "@activity('LookupMetaInterface').output.firstRow.IntName",
+							"type": "Expression"
+						},
+						"FilePattern": {
+							"value": "@activity('LookupMetaInterface').output.firstRow.FilePattern",
+							"type": "Expression"
+						},
+						"SourceCount": 0,
+						"TargetCount": "0",
+						"ExStatus": "'Succcess'"
+					}
 				}
 			},
 			{
