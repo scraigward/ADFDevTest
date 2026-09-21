@@ -50,6 +50,10 @@
 				},
 				"userProperties": [],
 				"typeProperties": {
+					"pipeline": {
+						"referenceName": "010-LandData-Child",
+						"type": "PipelineReference"
+					},
 					"waitOnCompletion": true
 				}
 			},
@@ -73,7 +77,14 @@
 					"secureOutput": false,
 					"secureInput": false
 				},
-				"userProperties": []
+				"userProperties": [],
+				"typeProperties": {
+					"storedProcedureName": "metadata.SP_Interface_Log"
+				},
+				"linkedServiceName": {
+					"referenceName": "SQLServerIonos",
+					"type": "LinkedServiceReference"
+				}
 			},
 			{
 				"name": "Stored procedure1",
@@ -88,7 +99,14 @@
 					"secureOutput": false,
 					"secureInput": false
 				},
-				"userProperties": []
+				"userProperties": [],
+				"typeProperties": {
+					"storedProcedureName": "spFailure"
+				},
+				"linkedServiceName": {
+					"referenceName": "SQLServerIonos",
+					"type": "LinkedServiceReference"
+				}
 			}
 		],
 		"variables": {
