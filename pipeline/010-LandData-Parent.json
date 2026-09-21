@@ -1,5 +1,5 @@
 {
-	"name": "landData",
+	"name": "010-LandData-Parent",
 	"properties": {
 		"activities": [
 			{
@@ -35,8 +35,8 @@
 				}
 			},
 			{
-				"name": "InterfaceVariables",
-				"type": "SetVariable",
+				"name": "Execute-010-LandData-Child",
+				"type": "ExecutePipeline",
 				"dependsOn": [
 					{
 						"activity": "LookupMetaInterface",
@@ -46,16 +46,11 @@
 					}
 				],
 				"policy": {
-					"secureOutput": false,
 					"secureInput": false
 				},
 				"userProperties": [],
 				"typeProperties": {
-					"variableName": "InterfaceRowValues",
-					"value": {
-						"value": "@activity('LookupMetaInterface').output.firstRow.interfaces\n",
-						"type": "Expression"
-					}
+					"waitOnCompletion": true
 				}
 			}
 		],
