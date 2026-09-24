@@ -6,7 +6,7 @@
 			"type": "LinkedServiceReference"
 		},
 		"parameters": {
-			"StorageContainer": {
+			"TargetContainer": {
 				"type": "string"
 			}
 		},
@@ -16,7 +16,7 @@
 			"location": {
 				"type": "AzureBlobFSLocation",
 				"folderPath": {
-					"value": "@concat(pipeline().parameters.RootFolder, '/csvinput')\n",
+					"value": "@dataset().StorageContainer",
 					"type": "Expression"
 				}
 			}
