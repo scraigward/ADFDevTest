@@ -18,7 +18,11 @@
 						"referenceName": "AzureDataFactoryDB",
 						"type": "DatasetReference"
 					},
-					"name": "sink1"
+					"name": "sink1",
+					"rejectedDataLinkedService": {
+						"referenceName": "AzureDataLakeStorageLS",
+						"type": "LinkedServiceReference"
+					}
 				}
 			],
 			"transformations": [],
