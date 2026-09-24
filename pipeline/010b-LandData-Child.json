@@ -106,6 +106,12 @@
 										}
 									},
 									"datasetParameters": {
+										"source1": {
+											"TargetContianer": {
+												"value": "@pipeline().parameters.TargetContainer",
+												"type": "Expression"
+											}
+										},
 										"sink1": {
 											"SchemaName": {
 												"value": "@pipeline().parameters.SchemaName",
