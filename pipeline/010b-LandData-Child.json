@@ -88,7 +88,17 @@
 							"typeProperties": {
 								"dataflow": {
 									"referenceName": "dataflow1",
-									"type": "DataFlowReference"
+									"type": "DataFlowReference",
+									"parameters": {
+										"SchemaName": {
+											"value": "'@{pipeline().parameters.SchemaName}'",
+											"type": "Expression"
+										},
+										"TableName": {
+											"value": "'@{pipeline().parameters.TableName}'",
+											"type": "Expression"
+										}
+									}
 								},
 								"compute": {
 									"coreCount": 8,
