@@ -5,13 +5,20 @@
 			"referenceName": "AzureBlobStorageLS",
 			"type": "LinkedServiceReference"
 		},
+		"parameters": {
+			"TargetContianer": {
+				"type": "string"
+			}
+		},
 		"annotations": [],
 		"type": "DelimitedText",
 		"typeProperties": {
 			"location": {
 				"type": "AzureBlobStorageLocation",
-				"fileName": "testcsv.csv",
-				"container": "csvinput"
+				"container": {
+					"value": "@dataset().TargetContianer",
+					"type": "Expression"
+				}
 			},
 			"columnDelimiter": ",",
 			"escapeChar": "\\",
