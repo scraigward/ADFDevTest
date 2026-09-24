@@ -78,6 +78,10 @@
 						"TableName": {
 							"value": "@split(activity('LookupMetaInterface').output.firstRow.TargetName, '.')[1]",
 							"type": "Expression"
+						},
+						"TargetContainer": {
+							"value": "@activity('LookupMetaInterface').output.firstRow.TargetContainer",
+							"type": "Expression"
 						}
 					}
 				}

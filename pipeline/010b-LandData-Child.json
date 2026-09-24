@@ -147,6 +147,9 @@
 			},
 			"TableName": {
 				"type": "string"
+			},
+			"TargetContainer": {
+				"type": "string"
 			}
 		},
 		"annotations": []
