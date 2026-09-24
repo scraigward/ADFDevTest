@@ -28,8 +28,8 @@
 			"transformations": [],
 			"scriptLines": [
 				"parameters{",
-				"     SchemaName as string ($SchemaName),",
-				"     TableName as string ($TableName)",
+				"     SchemaName as string,",
+				"     TableName as string",
 				"}",
 				"source(output(",
 				"          Id as boolean,",
