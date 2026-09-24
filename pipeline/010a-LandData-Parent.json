@@ -23,6 +23,14 @@
 						},
 						"queryTimeout": "02:00:00",
 						"partitionOption": "None"
+					},
+					"dataset": {
+						"referenceName": "AzureDataFactoryDB",
+						"type": "DatasetReference",
+						"parameters": {
+							"SchemaName": "metadata",
+							"TableName": "interfaces"
+						}
 					}
 				}
 			},
