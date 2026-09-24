@@ -1,0 +1,16 @@
+{
+	"name": "AzureDataFactoryDB",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "SqlServerSmallRuntime",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "SqlServerTable",
+		"schema": [],
+		"typeProperties": {
+			"schema": "test",
+			"table": "test"
+		}
+	}
+}
