@@ -70,7 +70,12 @@
 						},
 						"SourceCount": 0,
 						"TargetCount": "0",
-						"ExStatus": "'Succcess'"
+						"ExStatus": "'Succcess'",
+						"SchemaName": {
+							"value": "@split(activity('LookupMetaInterface').output.firstRow.TargetName, '.')",
+							"type": "Expression"
+						},
+						"TableName": "@split(activity('LookupMetaInterface').output.firstRow.TargetName, '.')["
 					}
 				}
 			},
