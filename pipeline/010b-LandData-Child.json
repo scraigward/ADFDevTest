@@ -98,11 +98,23 @@
 											"value": "'@{pipeline().parameters.TableName}'",
 											"type": "Expression"
 										}
+									},
+									"datasetParameters": {
+										"sink1": {
+											"SchemaName": {
+												"value": "@pipeline().parameters.SchemaName",
+												"type": "Expression"
+											},
+											"TableName": {
+												"value": "@pipeline().parameters.TableName",
+												"type": "Expression"
+											}
+										}
 									}
 								},
-								"compute": {
-									"coreCount": 8,
-									"computeType": "General"
+								"integrationRuntime": {
+									"referenceName": "SmallIntegrationRuntime",
+									"type": "IntegrationRuntimeReference"
 								},
 								"traceLevel": "Fine"
 							}
