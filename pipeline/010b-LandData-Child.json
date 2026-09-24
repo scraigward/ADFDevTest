@@ -17,7 +17,13 @@
 				"typeProperties": {
 					"dataset": {
 						"referenceName": "Metadata_Binary",
-						"type": "DatasetReference"
+						"type": "DatasetReference",
+						"parameters": {
+							"TargetContainer": {
+								"value": "@pipeline().parameters.TargetContainer",
+								"type": "Expression"
+							}
+						}
 					},
 					"fieldList": [
 						"childItems"
