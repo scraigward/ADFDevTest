@@ -109,10 +109,6 @@
 				"userProperties": [],
 				"typeProperties": {
 					"storedProcedureName": "metadata.SP_Interface_Log"
-				},
-				"linkedServiceName": {
-					"referenceName": "SQLServerIonos",
-					"type": "LinkedServiceReference"
 				}
 			},
 			{
@@ -131,10 +127,6 @@
 				"userProperties": [],
 				"typeProperties": {
 					"storedProcedureName": "spFailure"
-				},
-				"linkedServiceName": {
-					"referenceName": "SQLServerIonos",
-					"type": "LinkedServiceReference"
 				}
 			}
 		],
