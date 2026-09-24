@@ -72,10 +72,13 @@
 						"TargetCount": "0",
 						"ExStatus": "'Succcess'",
 						"SchemaName": {
-							"value": "@split(activity('LookupMetaInterface').output.firstRow.TargetName, '.')",
+							"value": "@split(activity('LookupMetaInterface').output.firstRow.TargetName, '.')[0]",
 							"type": "Expression"
 						},
-						"TableName": "@split(activity('LookupMetaInterface').output.firstRow.TargetName, '.')["
+						"TableName": {
+							"value": "@split(activity('LookupMetaInterface').output.firstRow.TargetName, '.')[1]",
+							"type": "Expression"
+						}
 					}
 				}
 			},
